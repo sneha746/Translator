@@ -1,60 +1,62 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# dog bark translator 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [code comets]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
+- Team Lead: [sneha t] - [college of engineering attingal]
+- Member 2: [adithya] - [College of engineering attingal]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+A website to detect the sound of a dog barking and displying some creative and funny commands as reply
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Dogs bark all the time, but what are they really trying to say? Are they warning us of impending doom... or just hungry again? For centuries, humans have struggled to decode the mysterious woofs and ruffs of our four-legged companions. We decided it’s time to stop guessing and start translating.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built a Dog Bark Translator – a groundbreaking, scientifically questionable, completely unnecessary web app that listens to barks and translates them into ridiculous, randomly generated messages.
+
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- python,html
+- flask
+- pyaudio,numpy,random,wave
+- html/css/javascript,fetch API,python
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- laptop
 
 ### Implementation
-For Software:
+For Software:python,flask,pyaudio,numpy,html/css/javascript,web browser
 # Installation
-[commands]
+pip install numpy, pip install flask,pip install pyaudio
 
 # Run
-[commands]
+python app.py,Running on http://127.0.0.1:5000
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img src="home.png">
+*this is the webpage we created to translate dogs barking sound into creative and funny commands
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1024" height="512" alt="frame (3)" src="Screenshot 2025-08-03 010340.png" />
+when no barking sound is detected then command like "no sound detected,try again"will display
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1024" height="512" alt="frame (3)" src="Screenshot 2025-08-03 005233.png" />
+when barking sound is detected,creative or funny commands will display like this
+
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -81,15 +83,15 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+<video controls src="https://github.com/sneha746/Translator/blob/main/Screen%20Recording%202025-08-03%20012226.mp4" title="[Add your demo video link here]"></video>
+here when no audio is detected "no sound detected,try again"will display and when sound get detected a command will be detected
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- [Sneha T]: [Specific contributions]
+- [Adithya]: [Specific contributions]
 - [Name 3]: [Specific contributions]
 
 ---
