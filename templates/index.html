@@ -2,30 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bark Translator</title>
+  <title>Dog Bark Translator</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 100px;
+      padding-top: 100px;
+      background-color: #fef9f4;
     }
     button {
       padding: 15px 30px;
-      font-size: 18px;
+      font-size: 20px;
+      background-color: #ff8c42;
+      color: white;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
     }
-    #result {
-      margin-top: 30px;
-      font-size: 20px;
+    p {
+      margin-top: 40px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <h1>🐶 Bark Translator</h1>
-  <button onclick="detectBark()">Detect Barks</button>
-  <div id="result "></div>
+  <h1>🐾 Dog Bark Translator</h1>
+  <button onclick="listenBark()">🔊 Listen for Bark</button>
+  <p id="result">Press the button to start!</p>
 
-  <!-- JavaScript -->
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>
+    async function listenBark() {
+      document.getElementById("result").textContent = "🎙️ Listening...";
+      try {
+        const response = await fetch('/detect-bark');
+        const data = await response.json();
+        document.getElementById("result").textContent = data.message;
+      } catch (error) {
+        document.getElementById("result").textContent = "❌ Error contacting server.";
+        console.error(error);
+      }
+    }
+  </script>
 </body>
 </html>
