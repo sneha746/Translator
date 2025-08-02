@@ -11,7 +11,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 RECORD_SECONDS = 1
-THRESHOLD = 300
+THRESHOLD = 1000
 
 translations = [
     "The squirrels are plotting again. This is not a drill.",
